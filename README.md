@@ -1,6 +1,6 @@
 Curso: MCA 1 2026-1 FCiencias
 
-Software: Google colab / Java 25 (Programiz)
+Software: Google Colab Python 3.12.12 / Java version: 21.0.7 (Programiz)
 
 Editor: Gabriel Lugo Rosete
 
