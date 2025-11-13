@@ -12,12 +12,10 @@ public class MainMiFiboHash {
             return n;
         }
 
-        // Si ya está calculado, lo obtenemos directamente
         if (memo.containsKey(n)) {
             return memo.get(n);
         }
 
-        // Si no, lo calculamos y guardamos en la tabla
         long valor = fibonacci(n - 1) + fibonacci(n - 2);
         memo.put(n, valor);
 
