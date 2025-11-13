@@ -19,9 +19,8 @@ public class FibonacciThreadsMem implements Runnable {
                 " - " + "fibonacci(" + fi + ") = " + res);
     }
 
-    // Método recursivo con memoria (memoization)
     private long fibonacci(long f) {
-        // Verificar si el valor ya está guardado
+
         if (memoria.containsKey(f)) {
             return memoria.get(f);
         }
@@ -34,7 +33,6 @@ public class FibonacciThreadsMem implements Runnable {
             resultado = fibonacci(f - 1) + fibonacci(f - 2);
         }
 
-        // Guardar el resultado en la Hashtable antes de devolverlo
         memoria.put(f, resultado);
         return resultado;
     }
